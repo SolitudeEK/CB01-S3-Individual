@@ -1,0 +1,12 @@
+.pointsPos
+{
+	position: relative;
+	float: right;
+	top:1em;
+	right: 60px;
+}
+.points
+{
+	font-size: 3.5em;
+	color:var(--color-main);
+}

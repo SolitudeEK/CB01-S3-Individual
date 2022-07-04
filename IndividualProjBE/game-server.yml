@@ -1,0 +1,15 @@
+version: '2'
+  game-server:
+      container_name: game-server
+      build:
+          context: docker-game-server
+          dockerfile: Dockerfile
+      image: game-server:latest
+      ports:
+          - 8080:8080
+      networks:
+          - spring-cloud-network
+
+networks:
+    spring-cloud-network:
+        driver: bridge

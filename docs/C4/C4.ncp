@@ -1,0 +1,203 @@
+<Project>
+  <Name>SnakeGame</Name>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>main</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>Field</Name>
+        <Access>Public</Access>
+        <Location left="599" top="406" />
+        <Size width="248" height="216" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">int[][] grid</Member>
+        <Member type="Method">public void CreateFood()</Member>
+        <Member type="Method">public int GetCell(int x, int y)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Snake</Name>
+        <Access>Public</Access>
+        <Location left="895" top="394" />
+        <Size width="265" height="216" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">List&lt;int&gt; body</Member>
+        <Member type="Method">public void AddBody()</Member>
+        <Member type="Method">public void MoveRight()</Member>
+        <Member type="Method">public void MoveLeft()</Member>
+        <Member type="Method">public void MoveForward()</Member>
+        <Member type="Method">private void Move()</Member>
+        <Member type="Method">public int GetHeadPos()</Member>
+        <Member type="Method">public List&lt;int&gt; GetSnakePos()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>SoloGame</Name>
+        <Access>Public</Access>
+        <Location left="796" top="144" />
+        <Size width="162" height="216" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">int point</Member>
+        <Member type="Method">public bool Move()</Member>
+        <Member type="Method">public void Render()</Member>
+        <Member type="Method">public void Lose()</Member>
+        <Member type="Method">public void Win()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>SnakePart</Name>
+        <Access>Public</Access>
+        <Location left="965" top="503" />
+        <Size width="162" height="216" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>WrongVectorException</Name>
+        <Access>Public</Access>
+        <Location left="1285" top="274" />
+        <Size width="162" height="216" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Association" first="2" second="1">
+        <Label>-snake</Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>877</X>
+          <Y>226</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartMultiplicity>1</StartMultiplicity>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="2" second="0">
+        <Label>-field</Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartMultiplicity>1</StartMultiplicity>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="1" second="3">
+        <Label>-sankeParts</Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndMultiplicity>2..*</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="1" second="4">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>untitled</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>WrongVectorException</Name>
+        <Access>Public</Access>
+        <Location left="882" top="234" />
+        <Size width="162" height="77" />
+        <Collapsed>False</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>SnakePart</Name>
+        <Access>Public</Access>
+        <Location left="562" top="463" />
+        <Size width="162" height="77" />
+        <Collapsed>False</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>MultiGame</Name>
+        <Access>Public</Access>
+        <Location left="393" top="104" />
+        <Size width="162" height="162" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">int point</Member>
+        <Member type="Method">public bool Move()</Member>
+        <Member type="Method">public void Render()</Member>
+        <Member type="Method">public void Lose()</Member>
+        <Member type="Method">public void Win()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Snake</Name>
+        <Access>Public</Access>
+        <Location left="492" top="354" />
+        <Size width="265" height="213" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">List&lt;int&gt; body</Member>
+        <Member type="Method">public void AddBody()</Member>
+        <Member type="Method">public void MoveRight()</Member>
+        <Member type="Method">public void MoveLeft()</Member>
+        <Member type="Method">public void MoveForward()</Member>
+        <Member type="Method">private void Move()</Member>
+        <Member type="Method">public int GetHeadPos()</Member>
+        <Member type="Method">public List&lt;int&gt; GetSnakePos()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Field</Name>
+        <Access>Public</Access>
+        <Location left="196" top="366" />
+        <Size width="248" height="128" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">int[][] grid</Member>
+        <Member type="Method">public void CreateFood()</Member>
+        <Member type="Method">public int GetCell(int x, int y)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Association" first="3" second="0">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="3" second="1">
+        <Label>-sankeParts</Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndMultiplicity>2..*</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="2" second="4">
+        <Label>-field</Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartMultiplicity>1</StartMultiplicity>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="2" second="3">
+        <Label>-snake</Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>474</X>
+          <Y>174</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartMultiplicity>1</StartMultiplicity>
+        <EndMultiplicity>2</EndMultiplicity>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+</Project>

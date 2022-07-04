@@ -1,0 +1,22 @@
+.boxPos
+{
+	margin-left: 
+	-20px;
+	
+	margin-top:6em;
+}
+.box
+{
+	padding: 2em 1em 2em 1em;
+	background-color: var(--color-secondary);
+	width: 500px;
+	border-radius: 20px;
+	text-align: center;
+
+}
+.chat{
+	position: relative;
+	float:right;
+	height: 300px;
+	right:20px;
+}

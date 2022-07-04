@@ -1,0 +1,44 @@
+plugins {
+    id "org.sonarqube" version "3.3"
+    id 'java'
+    id 'org.springframework.boot' version '2.5.6'
+    id "io.spring.dependency-management" version "1.0.11.RELEASE"
+}
+
+group 'nl.fontys.snakegame'
+version '2'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-websocket'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.webjars:webjars-locator-core'
+    implementation 'org.webjars:sockjs-client:1.0.2'
+    implementation 'org.webjars:stomp-websocket:2.3.3'
+    implementation 'org.webjars:bootstrap:3.3.7'
+    implementation 'org.json:json:20171018'
+    implementation 'io.jsonwebtoken:jjwt:0.9.1'
+    implementation 'org.webjars:jquery:3.1.1-1'
+    implementation 'org.projectlombok:lombok:1.18.20'
+    runtimeOnly 'com.h2database:h2'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation group: 'org.mockito', name: 'mockito-core', version: '2.1.0'
+}
+
+test {
+    useJUnitPlatform()
+}
+tasks.withType(Test).configureEach {
+    useJUnitPlatform()
+
+    systemProperty 'java.util.logging.config.file', "${project.buildDir}/resources/test/logging-test.properties"
+
+    forkEvery = 1
+
+    testLogging {
+        showStandardStreams = true
+    }
+}

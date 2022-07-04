@@ -1,0 +1,14 @@
+.bodyText {
+	position: relative;
+	color: var(--color-white);
+	display: inline-block;
+	font-size: 20px;
+	height: 20px;
+	width: 400px
+
+}
+.sender {
+	color: var(--color-main);
+	display: inline-block;
+	font-size: 26px;
+}

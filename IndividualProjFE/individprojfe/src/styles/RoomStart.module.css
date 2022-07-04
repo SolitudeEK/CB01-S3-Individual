@@ -1,0 +1,10 @@
+.rsPos{
+	position: relative;
+	top:100px;
+}
+.orPos
+{
+	color: var(--color-white);
+	margin-left: 330px;
+	font-size: 45px;
+}

@@ -1,0 +1,9 @@
+.back
+{
+	position: absolute;
+	font-size: 36px;
+	top:19.8em;
+	left:840px;
+	color: var(--color-main);
+	z-index: 20;
+}

@@ -1,0 +1,25 @@
+.inputLine {
+	position: absolute;
+	right: 90px;
+	border-radius: 8px 0 0 8px;
+	width: 320px;
+	border: 0;
+	top:200px;
+}
+.buttonLine {
+	position: absolute;
+	right: 10px;
+	width: 80px;
+	height: 40px;
+	border-radius: 0;
+	border: 0 1px 1px 1px;
+	border-radius: 0 8px 8px 0;
+	top: 182px;
+}
+.1messageBox{
+	position: absolute;
+	width: 340px;
+	height: 400px;
+	right:60px;
+
+}

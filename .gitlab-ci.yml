@@ -1,0 +1,34 @@
+stages:
+    - test
+    - build
+    - container
+    - sonarqube 
+
+test:
+    stage: test
+    script:
+        - cd IndividualProjBE
+        - ./gradlew test
+        - ./gradlew.bat --stop
+
+build:
+    stage: build
+    script:
+        - cd IndividualProjBE
+        - ./gradlew build
+        - ./gradlew.bat --stop
+
+container:
+    stage: container
+    script:
+        - docker rm game-client
+        - docker rm game-server
+        - docker-compose up -d --build
+        - docker stop game-server
+        - docker stop game-client
+
+sonarqube:
+    stage: sonarqube
+    script:
+        - C:/progs/cb01-s3-individual_egor_knyazev/sonar.bat
+        - --stop

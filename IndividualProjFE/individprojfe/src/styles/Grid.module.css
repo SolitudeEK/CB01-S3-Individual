@@ -1,0 +1,22 @@
+.grid
+{
+position: absolute;
+  width: 750px;
+  height: 750px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: var(--color-black);
+  left:3.2em;
+  outline-width: 1px;
+  outline-color: var(--color-black);
+  outline-style: solid;
+}
+.gridPos
+{
+	position: absolute;
+	top: 3em;
+	width: 1100px;
+	height: 850px;
+}

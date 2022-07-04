@@ -1,0 +1,10 @@
+.fruit {
+  outline-style: solid;
+  outline-width: 1px;
+  outline-color: var(--color-black);
+  outline-offset: -1px;
+  width: 25px;
+  height: 25px;
+  background-color: var(--color-fruit);
+  position: absolute;
+}

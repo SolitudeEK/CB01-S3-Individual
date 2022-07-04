@@ -1,0 +1,20 @@
+.box
+{
+	position: relative;
+	left:-60px;
+	height: 80px;
+	width: 500px;
+	margin:	0 0 2em 50px;
+	background-color: var(--color-main);
+	border-radius: 0 30px 30px 0;
+}
+
+.btnLink{
+	text-decoration: none;
+	padding-top: 20px;
+	font-size: 30px;
+	color: var(--color-secondary);
+}
+.btnLink:hover {
+	color:#ffffff;
+}

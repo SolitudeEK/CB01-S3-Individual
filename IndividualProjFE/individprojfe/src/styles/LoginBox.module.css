@@ -1,0 +1,68 @@
+:root {
+	--color-main: #FFdd11;
+	--color-secondary: #546543;
+	--color-back:#333333;
+	--color-white:#ffffff;
+	--color-black:#000000;
+	--color-snake-main:green;
+	--color-fruit:orange;
+}
+.box {
+	position: absolute;
+	margin-left: -150px;
+	padding-left: 50%;
+	width: 300px;
+	height: 200px;
+	margin-top: 10em;
+}
+input,
+label,
+.linkReg {
+	display: block;
+}
+input,
+button {
+	border-width: 2px;
+	border-radius: 0.8em;
+	border-color: var(--color-secondary);
+	border-style: solid;
+}
+
+label {
+	text-align: center;
+	margin-bottom: 0.4em;
+	font-size: 26px;
+	color: var(--color-secondary);
+}
+input {
+	margin-left: 40px;
+	width: 220px;
+	height: 34px;
+	font-size: 22px;
+}
+button {
+	margin-left: 90px;
+	margin-top: 0.8em;
+	width: 120px;
+	height: 40px;
+	background-color: var(--color-main);
+	color: var(--color-secondary);
+	font-size: 20px;
+	cursor: pointer;
+}
+.linkReg{
+	margin-left: -90px;
+	margin-top: 0.4em;
+	padding-left: 50%;
+	text-align: center;
+	width: 180px;
+	cursor: pointer;
+	font-size: 20px;
+}
+.linkReg:hover {
+	color: var(--color-secondary);
+}
+button:hover {
+	color: var(--color-white);
+}
+
